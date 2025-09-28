@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Basis Data - UBP Karawang</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px;
+            background: #2e3b4e;
+            color: white;
+            border-radius: 10px;
+            width: 80%;
+            margin: 20px auto;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #ff9900;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .post ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .post ul li a {
+            text-decoration: none;
+            color: #f4f4f9;
+            background: #2e3b4e;
+            padding: 10px 18px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .post ul li a:hover {
+            background: #dd8705;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+            background: #2e3b4e;
+            color: white;
+            font-size: 1.2em;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        footer p a {
+            color: #f4f4f9;
+            text-decoration: none;
+        }
+
+        footer p a:hover {
+            text-decoration: underline;
+            color:#ff9900;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Basthiar Rofil Ahdistyo</h1>
+    <p>Mahasiswa Teknik Informatika UBP</p>
+    <p>NIM: 24416255201200</p>
+    <p>Blog Basis Data</p>
+</header>
+
+<div class="post">
+    <ul>
+        <li><a href="post.1.html">Post 1</a></li>
+        <li><a href="post.2.html">Post 2</a></li>
+        <li><a href="post.3.html">Post 3</a></li>
+        <li><a href="post.4.html">Post 4</a></li>
+    </ul>
+</div>
+
+<footer>
+    <p>Kunjungi Web Universitas Buana Perjuangan - <a href ="https://www.ubpkarawang.ac.id" target="_blank">UBP Karawang</a></p>
+</footer>
+
+<script>
+    // Accordion functionality
+    var acc = document.getElementsByClassName("accordion");
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
